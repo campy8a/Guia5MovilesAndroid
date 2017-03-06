@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_pedidos"
+    android:layout_marginTop="50dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.fcampy.demomoviles.Activities.PedidosActivity"
+    tools:showIn="@layout/activity_pedidos">
+
+    <EditText
+
+        android:id="@+id/nombre_cliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/nombre_cliente" />
+
+    <EditText
+        android:id="@+id/lugar_Orden"
+        android:hint="@string/orden"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/pedir_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hacer Pedido"
+        android:backgroundTint="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Metodo de pago "
+        android:backgroundTint="@color/colorAccent"/>
+
+    <fragment
+        android:id="@+id/fragment_propina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

@@ -1,0 +1,38 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.fcampy.demomoviles.Fragments.PropinaFragment">
+
+   <LinearLayout
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <Button
+           android:id="@+id/menos"
+           style="@style/Widget.AppCompat.Button.Colored"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="-1000"
+           android:textStyle="bold"/>
+       <TextView
+           android:id="@+id/propina_text"
+           android:gravity="center"
+           android:layout_weight="1.0"
+           android:layout_width="0dp"
+           android:layout_height="wrap_content"
+           android:text="1000"
+           android:textStyle="bold"/>
+       <Button
+           android:id="@+id/mas"
+           style="@style/Widget.AppCompat.Button.Colored"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="1000"
+           android:textStyle="bold"/>
+
+
+   </LinearLayout>
+
+</FrameLayout>
